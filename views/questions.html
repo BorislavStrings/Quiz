@@ -1,0 +1,19 @@
+<div class="questions">
+	<div class="marker-container">
+		<img class="marker" src="images/marker.png" style="left: {{progress_width}}%" />
+		<span style="left: {{progress_width}}%" class="number">{{progress_number}}</span>
+	</div>
+	<div class="progress">
+		<div style="width: {{progress_width}}%;" class="inner"></div>
+	</div>
+	<form name="userForm" novalidate>
+		<div id="question_{{question.id}}" class="form-group" ng-class="{active : $first, question : true}" ng-repeat="(question_key, question) in questions">
+			<div class="answers-container">
+				<label class="title">{{ question.text }}</label>
+				<div ng-repeat="(key, answer) in question.answers" class="answer {{colors.getColor(key)}}" ng-click="submitAnswer(question.id, answer.id)">
+					{{answer.text}}
+				</div>
+			</div>
+		</div>
+	</form>
+</div>

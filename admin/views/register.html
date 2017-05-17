@@ -1,0 +1,39 @@
+<div id="login" class="container-fluid-full">
+    <div class="row-fluid">
+        <div class="row-fluid">
+            <div class="login-box">
+                <div class="action-buttons">
+                    <a class="btn" href="./#/login">Sign in</a>
+                    <a class="btn btn-primary" href="./#/register">Sign up</a>
+                    <div class="clearfix"></div>
+                </div>
+                <div ng-show="messages.error" class="alert alert-error">
+                    {{messages.error}}
+                </div>
+                <h2>Register Information:</h2>
+                <form class="form-horizontal">
+                    <fieldset>
+                        <div class="input-prepend" title="Email">
+                            <span class="add-on"><i class="halflings-icon user"></i></span>
+                            <input class="input-large span10" name="email" id="email" ng-model="egister.email" type="text" placeholder="Email"/>
+                        </div>
+                        <div class="clearfix"></div>
+                        <div class="input-prepend" title="Password">
+                            <span class="add-on"><i class="halflings-icon lock"></i></span>
+                            <input class="input-large span10" id="password" ng-model="register.password" name="password" type="password" placeholder="Password"/>
+                        </div>
+                        <div class="input-prepend" title="Password">
+                            <span class="add-on"><i class="halflings-icon lock"></i></span>
+                            <input class="input-large span10" id="repeat_password" ng-model="register.repeat_password" name="password" type="password" placeholder="Repeat Password"/>
+                        </div>
+                        <div class="clearfix"></div>
+                        <div class="button-login">
+                            <button type="button" name="login" ng-click="register.submit();" class="btn btn-primary">Register</button>
+                        </div>
+                        <div class="clearfix"></div>
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

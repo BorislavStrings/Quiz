@@ -1,0 +1,9 @@
+<div class="logo center"><img src="images/logo.png"</div>
+<div class="quiz-list">
+	<div class="title">Select a quiz:</div>
+	<ul>
+		<li id="quiz_{{topic.id}}" ng-click="selectTopic(topic.id)" class="form-group" ng-repeat="(inx, topic) in topics_array">
+			<div class="img-container" style="background-image: url('{{topic.image}}')"></div><span class="name">{{topic.name}}</span>
+		</li>
+	</ul>
+</div>

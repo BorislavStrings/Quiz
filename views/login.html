@@ -1,0 +1,37 @@
+<div id="login" ng-show="login_visible">
+	<div class="logo center"><img src="images/logo.png"</div>
+	<div class="login-form">
+		<div class="content" id="login-content">
+			<div class="facebook-login">
+				<div id="facebook_login">
+					<img src="images/facebook_login.png" alt="Facebook Login" />
+					<!---<div  class="fb-login-button" data-scope="public_profile, email" data-max-rows="1" data-size="xlarge" data-show-faces="false" data-auto-logout-link="false"></div>-->
+				</div>
+				<!---<fb:login-button data-scope="email" scope="public_profile, email" data-size="xlarge"></fb:login-button>--->
+				<div class="btn" ng-click="menu.show('normal');">
+					<img class="arrow-down" src="images/arrow-down.png" />
+					OR Say me who are you?
+					<img class="arrow-down right" src="images/arrow-down.png" />
+				</div>
+			</div>
+			<div class="normal-login">
+				<div class="btn" ng-click="menu.show('facebook');">
+					Login with Facebook
+				</div>
+				<div class="row">
+					<span class="input-group-addon"><i class="user-icon"></i></span>
+					<input id="name" type="text" name="name" class="form-control" placeholder="Enter your name..." />
+					<div class="f-clear"></div>
+				</div>
+				<div class="row">
+					<span class="input-group-addon"><i class="email-icon"></i></span>
+					<input id="email" type="text" name="email" class="form-control" placeholder="Enter your Email..." />
+					<div class="f-clear"></div>
+				</div>
+				<div class="row">
+					<button name="login" ng-click="login.submit();">Login</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

@@ -1,0 +1,96 @@
+html, body, .wrapper {
+	width: 100%;
+	padding: 0;
+    height: 100%;
+	margin: 0;
+    background: #fff;
+}
+#login {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #fff url('../images/background_white.png') no-repeat center center;
+    background-size: cover;
+}
+#login .action-buttons .btn {
+    width: 50%;
+    float: left;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+#login .action-buttons {
+    margin-bottom: 20px;
+}
+#login .action-buttons .btn-primary {
+    background: #fff;
+    border: 0;
+    color: #000;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    height: 40px;
+}
+#login .alert.alert-error {
+    margin: 0 18px;
+}
+
+.center .label {
+    cursor: pointer;
+}
+
+.error-field {
+    border: 1px solid darkred !important;
+    border-color: darkred !important;
+}
+.preview-image {
+    width: 100px;
+    height: 100px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.row-fluid.top-options {
+    margin: 15px;
+}
+.row-fluid.top-options.cluster-option .btn {
+    margin-top: -10px;
+}
+.row-fluid.top-options .btn {
+    height: 30px;
+    line-height: 17px;
+    margin-left: 15px;
+}
+
+.user-results .class-image {
+    width: 100%;
+    height: 250px;
+    background-size: cover;
+    background-position: center center;
+}
+.skill-bar .meter {
+    position: relative;
+}
+.skill-bar .meter span {
+    position: relative;
+    z-index: 10;
+}
+.skill-bar .meter .mean {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    z-index: 9;
+    background: rgb(210, 210, 210);
+    height: 21px;
+    top: -3px;
+}
+.skill-bar li {
+    margin: 20px 0;
+}
+
+.f-clear {
+	clear: both;
+}

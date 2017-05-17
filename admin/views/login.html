@@ -1,0 +1,34 @@
+ <div id="login" class="container-fluid-full">
+    <div class="row-fluid">
+        <div class="row-fluid">
+            <div class="login-box">
+                <div class="action-buttons">
+                    <a class="btn btn-primary" href="./#/login">Sign in</a>
+                    <a class="btn" href="./#/register">Sign up</a>
+                    <div class="clearfix"></div>
+                </div>
+                <div ng-show="messages.error" class="alert alert-error">
+                    {{messages.error}}
+                </div>
+                <h2>Login to your account</h2>
+                <form class="form-horizontal" action="index.html" method="post">
+                    <fieldset>
+                        <div class="input-prepend" title="Email">
+                            <span class="add-on"><i class="halflings-icon user"></i></span>
+                            <input class="input-large span10" name="email" id="email" ng-model="login.email" type="text" placeholder="Email"/>
+                        </div>
+                        <div class="clearfix"></div>
+
+                        <div class="input-prepend" title="Password">
+                            <span class="add-on"><i class="halflings-icon lock"></i></span>
+                            <input class="input-large span10" id="password" ng-model="login.password" name="password" type="password" placeholder="Password"/>
+                        </div>
+                        <div class="clearfix"></div>
+                        <div class="button-login">
+                            <button type="button" name="login" ng-click="login.submit();" class="btn btn-primary">Login</button>
+                        </div>
+                        <div class="clearfix"></div>
+                </form>
+            </div><!--/span-->
+    </div><!--/row-->
+</div><!--/.fluid-container-->
